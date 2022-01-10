@@ -1,0 +1,71 @@
+:root {
+ --main-bg-color: hsl(233, 47%, 7%);
+ --card-bg-color: hsl(244, 38%, 16%);
+ --heading-color: hsl(0, 0%, 100%);
+ --accent-color: hsl(277, 64%, 61%);
+ --main-paraph-color: hsla(0, 0%, 100%, 0.75);
+ --stat-heading-color: hsla(0, 0%, 100%, 0.6);
+ font-size: 15px;   
+}
+
+*, ::before, ::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.page__container {
+    font-size: 1rem;
+    font-family: 'Inter', sans-serif;
+    background-color: var(--main-bg-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 1rem;
+}
+
+.card__container {
+    background-color: var(--card-bg-color);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    max-width: 26rem;
+    border-radius: 7px;
+}
+
+.infos__container {
+    max-width: 85px;
+    overflow: hidden;
+}
+
+.img__mobile {
+    width: 100%;
+}
+
+.img__desktop {
+    display: none;
+}
+
+.card__container img {
+    margin-bottom: 2rem;
+}
+
+
+.card__container h2 {
+    color: var(--heading-color);
+    font-size: 2.1rem;
+}
+
+.card__container strong {
+    color: var(--accent-color);
+}
+
+.card__container p {
+    color: ;
+}
+

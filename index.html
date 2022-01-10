@@ -5,21 +5,36 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
   <link rel="stylesheet" href="style.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap" rel="stylesheet">
   <title>Frontend Mentor | Stats preview card component</title>
 </head>
 <body>
   <div class="page__container">
     <div class="card__container">
-      <img src="images\image-header-mobile.jpg" alt="women working on computer and having a blast">
+        <img src="images\image-header-mobile.jpg" alt="women working on computer and having a blast" class="img__mobile">
+        <img src="images\image-header-desktop.jpg" alt="women working on computer and having a blast" class="img__desktop">
       <div class="infos_container">
-        Get insights that help your business grow.
-      
-        Discover the benefits of data analytics and make better decisions regarding revenue, customer 
-        experience, and overall efficiency.
-      
-        10k+ companies
-        314 templates
-        12m+ queries
+        <h2 class="infos__title">Get <strong>insights</strong> that help your business grow.</h2>
+        <p class="infos__descrription">
+          Discover the benefits of data analytics and make better decisions regarding revenue, customer
+          experience, and overall efficiency.
+        </p>
+        <div class="stats__container">
+          <div class="stat__item">
+            <p class="stats__value">10k+</p>
+            <p class="stats__type">companies</p>
+          </div>
+          <div class="stat__item">
+            <p class="stats__value">12m+</p>
+            <p class="stats__type">queries</p>
+          </div>
+          <div class="stat__item">
+            <p class="stats__value">314</p>
+            <p class="stats__type">templates</p>
+          </div>
+        </div>
       </div>
     </div>
   </div>

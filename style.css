@@ -38,7 +38,6 @@
     border-radius: 7px;
 }
 
-
 .img__mobile {
     width: 100%;
 }
@@ -55,7 +54,6 @@
     align-items: center;
     gap: 1rem;
 }
-
 
 .infos__title {
     color: var(--heading-color);
@@ -92,5 +90,30 @@
     font-weight: 400;
     font-size: 1rem;
     text-transform: uppercase;
+}
+
+@media (min-width: 768px) {
+    .card__container {
+        flex-direction: row;
+        width: clamp(80vw, 65rem, 95%);
+    }
+
+    .img__mobile {
+        display: none;
+    }
+
+    .img__desktop {
+        display: block;
+        height: 100%;
+        width: 50%;
+        object-fit: cover;
+        order: 2;
+    }
+
+    .stats__container {
+        flex-direction: row;
+    }
+
+
 
 }

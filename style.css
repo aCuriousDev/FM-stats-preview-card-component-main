@@ -95,8 +95,16 @@
 @media (min-width: 768px) {
     .card__container {
         flex-direction: row;
-        width: clamp(80vw, 65rem, 95%);
+        align-items: stretch;
+        justify-content: space-between;
+        gap: 0rem;
+        width: 80vw;
+        /* max-width: 80vw; */
     }
+
+    .card__container > * {
+        flex: 1 1 ;
+    } 
 
     .img__mobile {
         display: none;
@@ -104,14 +112,32 @@
 
     .img__desktop {
         display: block;
-        height: 100%;
+        /* height: 100%; */
         width: 50%;
         object-fit: cover;
         order: 2;
     }
 
+    .infos__container {
+        align-self: center;
+        align-items: start;
+        text-align: left;
+        padding: 0 1rem;
+    }
+
+    .infos__title {
+        max-width: none;
+    }
+
+    .infos__description {
+        max-width: none;
+ 
+    }
+
     .stats__container {
         flex-direction: row;
+        align-items: flex-start;
+        justify-self: start;
     }
 
 

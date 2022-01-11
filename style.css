@@ -93,13 +93,17 @@
 }
 
 @media (min-width: 768px) {
+    .page__container {
+        padding: 0 5rem;
+    }
+
     .card__container {
         flex-direction: row;
         align-items: stretch;
         justify-content: space-between;
         gap: 0rem;
-        width: 80vw;
-        /* max-width: 80vw; */
+        width: auto;
+        min-width: fit-content;
     }
 
     .card__container > * {
